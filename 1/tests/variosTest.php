@@ -1,6 +1,6 @@
 <?php
 use PHPUnit\Framework\TestCase;
-require_once('./src/varios.php');
+
 require_once('./src/Email.php');
 
 final class variosTest extends TestCase
@@ -18,10 +18,12 @@ final class variosTest extends TestCase
         $this->assertEmpty([]);
     }
 
+//assertSame : este compara el tipo de valor;
     public function testValor(){
         $this->assertSame("8",varios::valor("8"));
     }
 
+//assertInfinite
     public function testInf(){
       $this->assertInfinite(varios::inf());
     }
