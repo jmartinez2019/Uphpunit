@@ -6,6 +6,7 @@ require_once('./src/Email.php');
 final class variosTest extends TestCase
 {
 
+// metohd sumarrrrrr
     public function testSumar(){
         $this->assertEquals(10 ,varios::sumar(5,5));
     }
