@@ -26,7 +26,10 @@ final class variosTest extends TestCase
       $this->assertInfinite(varios::inf());
     }
 
-  
+    public function testIns(){
+        $this->assertSame(Email::class,varios::ins());
+    }
+
 
 }
 ?>
